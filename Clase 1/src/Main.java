@@ -17,7 +17,9 @@ public class Main {
         //EJ7(teclado);
         //Ej8(teclado);
         //Ej9(teclado);
-        Ej10(teclado);
+        //Ej10(teclado);
+        //Ej11(teclado);
+        Ej12(teclado);
 
     }
 
@@ -249,6 +251,35 @@ public class Main {
         centigrados = (grados - 32) * 0.5556;
 
         System.out.println("Convertido a centígrados son: º" + centigrados);
+    }
+
+    public static void Ej11(Scanner sc)
+    {
+        double radio;
+        double area;
+        double longitud;
+
+        System.out.println("Ingrese el radio de la circuenferencia: ");
+        radio = sc.nextDouble();
+
+        area = (Math.pow(radio,2) * 3.14);
+        longitud = (radio * 2) * 3.14;
+
+        System.out.println("El area de la circunferencia es: " + area + "Y la longitud es: " + longitud);
+    }
+
+    public static void Ej12(Scanner sc)
+    {
+        int velocidad;
+        int resultado;
+        System.out.println("Ingrese la velocidad en Km/h: ");
+        velocidad = sc.nextInt();
+
+        resultado = (int)(velocidad/3.6);
+
+        System.out.println("En Mts/seg Equivale a: " + resultado);
+
+
     }
 
 
