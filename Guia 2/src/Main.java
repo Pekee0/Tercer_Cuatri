@@ -5,13 +5,14 @@ public class Main {
     public static void main(String[] args)
     {
         Scanner teclado = new Scanner(System.in);
-        Ej1(teclado);
+        EJ1(teclado);
+        EJ2(teclado);
 
         
 
     }
     
-    public static void Ej1(Scanner sc)
+    public static void EJ1(Scanner sc)
     {
         Rectangulo rec1 = new Rectangulo();
 
@@ -23,6 +24,10 @@ public class Main {
 
         System.out.println("El area del rectangulo es de " + rec1.calcularArea());
         System.out.println("El perimetro del rectangulo es de " + rec1.calcularPerimetro());
+    }
+
+    public static void EJ2 (Scanner sc)
+    {
 
     }
 }
