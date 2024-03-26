@@ -9,35 +9,39 @@ public class Empleado {
     private double salario;
 
     /// setter y getter
-    public Empleado (int dni, String nombre, String apellido, double salario)
-    {
+    public Empleado(int dni, String nombre, String apellido, double salario) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
         this.salario = salario;
     }
 
-    public int getDni(){return dni};
+    public int getDni() {
+        return dni;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+
     /// METODOS
 
-    public double calcularSalario(double salario)
+    public double calcularSalario(double salario) {
+        return salario * 12;
+    }
+
+    public double aumentarSalario(double porcentaje) {
+        return salario = salario  + salario * (porcentaje / 100);
+    }
+
+    public void mostrarEmpleado()
     {
-        return salario*12;
+        System.out.println("Nombre"  + this.nombre);
+        System.out.println("Apellido" + this.apellido);
+        System.out.println("DNI" + this.dni);
+        System.out.println("Salario" + this.salario);
+
     }
 
-    /*public double aumentarSalario(double porcentaje)
-    {
-
-    }
-*/
-
-    @Override
-    public String toString() {
-        return "Empleado{" +
-                "edad=" + edad +
-                ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", salario=" + salario +
-                '}';
-    }
 }
