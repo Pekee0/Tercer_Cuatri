@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 
+
 public class Main {
     public static void main(String[] args)
     {
@@ -8,8 +9,8 @@ public class Main {
       //  EJ1(teclado);
         // EJ2(teclado);
         //EJ3(teclado);
-        EJ4();
-
+        //EJ4();
+        EJ5();
         
 
     }
@@ -57,5 +58,11 @@ public class Main {
     cuenta1.debito(30000);
         System.out.println(cuenta1.toString());
 
+    }
+
+    public static void EJ5(){
+
+        Hora horaA= new Hora(12, 4, 12);
+        horaA.mostrarHora();
     }
 }
