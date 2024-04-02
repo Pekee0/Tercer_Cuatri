@@ -10,7 +10,7 @@ public class Main {
         // EJ2(teclado);
         //EJ3(teclado);
         //EJ4();
-        EJ5();
+        //EJ5();
         
 
     }
@@ -64,5 +64,6 @@ public class Main {
 
         Hora horaA= new Hora(12, 4, 12);
         horaA.mostrarHora();
+        
     }
 }
