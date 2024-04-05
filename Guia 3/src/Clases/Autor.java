@@ -1,3 +1,5 @@
+package Clases;
+
 public class Autor {
 
     private String nombre;
@@ -47,7 +49,7 @@ public class Autor {
 
     @Override
     public String toString() {
-        return "Autor{" +
+        return "Clases.Autor{" +
                 "nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", mail='" + mail + '\'' +

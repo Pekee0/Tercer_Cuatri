@@ -1,3 +1,6 @@
+package Clases;
+
+import Clases.Autor;
 
 public class Libro {
 
@@ -49,7 +52,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" +
+        return "Clases.Libro{" +
                 "titulo='" + titulo + '\'' +
                 ", precio=" + precio +
                 ", stock=" + stock +
