@@ -5,14 +5,35 @@ import Clases.Cliente;
 import Clases.ClienteBank;
 import Clases.CuentaBank;
 import Clases.Factura;
-
+import Clases.Autor;
+import Clases.Libro;
 public class Main {
 
     public static void main (String [] args )
     {
         Scanner teclado = new Scanner(System.in);
+        //EJ1(teclado);
         //Ej2(teclado);
-        Ej3(teclado);
+        //Ej3(teclado);
+    }
+
+    public static void EJ1(Scanner sc)
+    {
+        Autor aut = new Autor("Joshua", "Bloch", "joshua@email.com", 'M');
+
+        System.out.println(aut.toString());
+
+        Libro lib = new Libro("Effective Java", 450.0, 150,aut);
+
+        System.out.println(lib.toString());
+
+        lib.setPrecio(500.0);
+        lib.setStock(200);
+        System.out.println("Nueva data\n " + lib.toString());
+
+        System.out.println("Nombre: " + lib.getAutor().getNombre() + "\nApellido: " + lib.getAutor().getApellido() + "\nMail: " + lib.getAutor().getMail() + "\nGenero: " + lib.getAutor().getGenero());
+
+        lib.printProlijo();
     }
 
     public static  void Ej2 (Scanner sc)

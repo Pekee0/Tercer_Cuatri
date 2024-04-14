@@ -5,7 +5,7 @@ import javax.swing.JPanel;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class Cuadro {
+public class cuadro_nada_Que_ver {
     public static void main(String[] args) {
         // Crear un objeto JFrame
         JFrame ventana = new JFrame("Lamda");

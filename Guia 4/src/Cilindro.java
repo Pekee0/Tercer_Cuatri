@@ -25,4 +25,11 @@ public class Cilindro extends Circulo {
 
     }
 
+    @Override
+    public double calcularArea(double radio) {
+
+        return ((2 * Math.PI) * radio  * getAltura()) + super.calcularArea(radio);
+
+    }
+
 }

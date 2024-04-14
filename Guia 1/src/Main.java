@@ -3,23 +3,68 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+        int opc;
+        System.out.println("Ingrese el numero del ejercicio que desea ver, presione 0 para salir.");
+        opc = teclado.nextInt();
+
+        switch (opc)
+        {
+            case 1:
+                 Ej1(teclado);
+                break;
+
+            case 2:
+                Ej2(teclado);
+                break;
+
+            case 3:
+                EJ3(teclado);
+                break;
+
+            case 4:
+                EJ4(teclado);
+                break;
+
+            case 5:
+                EJ5(teclado);
+                break;
+            case 6:
+                Ej6(teclado);
+                break;
+            case 7:
+                EJ7(teclado);
+                break;
+            case 8:
+                Ej8(teclado);
+                break;
+            case 9:
+                Ej9(teclado);
+                break;
+            case 10:
+                Ej10(teclado);
+                break;
+
+            case 11:
+                Ej11(teclado);
+                break;
+
+            case 12:
+                Ej12(teclado);
+                break;
+            case 0:
+                System.out.println("adios :D");
+                break;
+        }
+
+
+
         //CalcularSueldo(teclado);
         //ClasificacionDeSexo(teclado);
-       // Ej1(teclado);
-        //Ej2(teclado);
-        //EJ3(teclado);
-        //EJ4(teclado);
-        //EJ5(teclado);
-        //Ej6(teclado);
-        //EJ7(teclado);
-        //Ej8(teclado);
-        //Ej9(teclado);
-        //Ej10(teclado);
-        //Ej11(teclado);
-        Ej12(teclado);
+
+
+
 
     }
 
