@@ -40,15 +40,5 @@ public class Password {
                 '}';
     }
 
-    public boolean esfuerte(int LONGITUD, String contraseña)
-    {
-        int mayus = 0;
-        int minus = 0;
-        int nums = 0;
 
-        for (char c : contraseña.toCharArray())
-        {
-            if (contraseña.)
-        }
-    }
 }
