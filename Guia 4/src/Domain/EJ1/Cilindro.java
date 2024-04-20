@@ -1,3 +1,5 @@
+package Domain.EJ1;
+
 public class Cilindro extends Circulo {
 
     private double altura = 1.0;
@@ -32,4 +34,8 @@ public class Cilindro extends Circulo {
 
     }
 
+    @Override
+    public String toString() {
+        return "Cilindro: subclase de " + super.toString() + "Altura: " + getAltura();
+    }
 }

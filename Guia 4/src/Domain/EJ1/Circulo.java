@@ -1,3 +1,5 @@
+package Domain.EJ1;
+
 public class Circulo {
 
     private double radio = 1.0;
@@ -41,4 +43,11 @@ public class Circulo {
     }
 
 
+    @Override
+    public String toString() {
+        return "Circulo{" +
+                "radio=" + radio +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
