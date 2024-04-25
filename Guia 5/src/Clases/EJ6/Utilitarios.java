@@ -10,4 +10,6 @@ public class Utilitarios extends Vehiculo{
         super(patente, marca, modelo, año, kilometraje,precioAlquiler,estado);
         this.tipoDeCarga = tipoDeCarga;
     }
+
+
 }

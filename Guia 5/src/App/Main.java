@@ -9,11 +9,12 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        EJ1();
-        EJ2();
-        EJ3();
-        EJ4();
-        EJ5();
+        //EJ1();
+        //EJ2();
+        //EJ3();
+        //EJ4();
+        //EJ5();
+        EJ6();
 
     }
 
@@ -98,14 +99,13 @@ public class Main {
 
     public static void EJ6()
     {
-        ArrayList <Vehiculo> flota = new ArrayList<>();
-        Automovil v1 = new Automovil("4-2-2024","Gonzalo","abc123", "peugeot", "205",2005,23000,2000,"disponible");
-        Utilitarios v2 = new Utilitarios("GPUS", "bbb333","Mercedes Bensz", "pertrner",1990,3000,3000,"Disponible");
+        FlotaVehiculos flota = new FlotaVehiculos();
+        Vehiculo a = new Vehiculo();
+        a.CrearVehiculo(a);
 
-        flota.add(v1);
-        flota.add(v2);
-
-
+        flota.AgregarVehiculo(a);
+        flota.mostrarFlota();
+        //flota.listarEstado(flota);
 
 
     }

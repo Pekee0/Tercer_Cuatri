@@ -1,7 +1,11 @@
 package Clases.EJ6;
 
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class Vehiculo {
 
@@ -15,6 +19,10 @@ public class Vehiculo {
 
     private ArrayList <Vehiculo> historial;
 
+    public Vehiculo()
+    {
+
+    }
 
     public Vehiculo (String patente, String marca, String modelo, int año,int kilometraje, int precioAlquiler, String estado)
     {
@@ -82,18 +90,47 @@ public class Vehiculo {
     }
 
 
+    public void alquilarOdevolerVehiculo(Vehiculo vehiculo)
+    {
+        if (estado == "Alquilado")
+        {
+            if(verificacionTecnica())
+            {
+                estado = "Disponible";
+            }
+            else
+            {
+                estado = "En reparacion";
+            }
+        }
 
-    public Vehiculo agregarVehiculo(Vehiculo a)
+    }
+    public void nuevoKilometrajeVehiculo(Vehiculo vehiculo,Scanner sc)
+    {
+        Random rd = new Random();
+        vehiculo.setKilometraje(kilometraje + rd.nextInt(10,1000));
+    }
+
+    public boolean verificacionTecnica()
+    {
+        Random rd = new Random();
+
+        return rd.nextBoolean();
+    }
+
+
+    public Vehiculo CrearVehiculo(Vehiculo a)
     {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Ingrese la patente del vehiculo");
-        a.patente = String.valueOf(sc.next().charAt(0));
+        a.patente = (sc.next());
 
         System.out.println("ingrese la marca del vehiculo");
-        a.marca = String.valueOf(sc.next().charAt(0));
+        a.marca =(sc.next());
 
         System.out.println("ingrese el modelo del vehiculo");
-        a.modelo = String.valueOf(sc.next().charAt(0));
+        a.modelo = sc.next();
 
         System.out.println("ingrese el año del vehiculo");
         a.año = sc.nextInt();
@@ -101,12 +138,26 @@ public class Vehiculo {
         System.out.println("ingrese el kilometraje del vehiculo");
         a.kilometraje = sc.nextInt();
 
+        System.out.println("ingrese el precio de alqiler:");
         a.precioAlquiler = sc.nextInt();
-        a.estado = String.valueOf(sc.next().charAt(0));
+
+        System.out.println("Ingrese el estado en el que se encuentra");
+        a.estado = (sc.next());
 
         return a;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "patente='" + patente + '\'' +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", año=" + año +
+                ", kilometraje=" + kilometraje +
+                ", precioAlquiler=" + precioAlquiler +
+                ", estado='" + estado + '\'' +
+                ", historial=" + historial +
+                '}';
+    }
 }
