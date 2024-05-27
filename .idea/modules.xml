@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ghuia 8/Ghuia 8.iml" filepath="$PROJECT_DIR$/Ghuia 8/Ghuia 8.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guia 1/Guia 1.iml" filepath="$PROJECT_DIR$/Guia 1/Guia 1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guia 2/Guia 2.iml" filepath="$PROJECT_DIR$/Guia 2/Guia 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guia 3/Guia 3.iml" filepath="$PROJECT_DIR$/Guia 3/Guia 3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guia 4/Guia 4.iml" filepath="$PROJECT_DIR$/Guia 4/Guia 4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guia 5/Guia 5.iml" filepath="$PROJECT_DIR$/Guia 5/Guia 5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guia 6/Guia 6.iml" filepath="$PROJECT_DIR$/Guia 6/Guia 6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Guia 7/Guia 7.iml" filepath="$PROJECT_DIR$/Guia 7/Guia 7.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tercer_Cuatri.iml" filepath="$PROJECT_DIR$/.idea/Tercer_Cuatri.iml" />
     </modules>
   </component>

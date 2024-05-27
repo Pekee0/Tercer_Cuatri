@@ -4,7 +4,13 @@ import java.util.*;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-/*
+
+        EJ1();
+        EJ2();
+    }
+
+    public static void EJ1 ()
+    {
         HashSet<String> set = new HashSet<String>();
         Scanner sc = new Scanner(System.in);
 
@@ -18,9 +24,7 @@ public class Main {
             set.add(palabras[i]);
         }
 
-        System.out.println(set);*/
-
-        EJ2();
+        System.out.println(set);
     }
 
    public static void EJ2 ()
