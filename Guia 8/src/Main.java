@@ -7,6 +7,7 @@ public class Main {
 
         EJ1();
         EJ2();
+
     }
 
     public static void EJ1 ()

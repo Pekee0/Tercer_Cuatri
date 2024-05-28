@@ -1,13 +1,17 @@
-public class Evento {
-    private String nombre;
-    private String fecha;
-    private String prioridad;
+import java.time.LocalDate;
 
-    public Evento(String nombre, String fecha, String prioridad) {
+public class Evento  {
+    private String nombre;
+    private LocalDate fecha;
+    private Prioridad prioridad;
+
+    public Evento(String nombre, LocalDate fecha, Prioridad prioridad) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.prioridad = prioridad;
     }
+
+
 
     @Override
     public String toString() {
