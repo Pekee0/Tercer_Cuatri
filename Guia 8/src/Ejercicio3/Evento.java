@@ -1,22 +1,17 @@
-package Ejercicio3;
-
 public class Evento {
     private String nombre;
     private String fecha;
-    private int prioridad; // -1 baja, 0 media,  1 alta
+    private String prioridad;
 
-    public Evento(String nombre, String fecha, int prioridad) {
+    public Evento(String nombre, String fecha, String prioridad) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.prioridad = prioridad;
     }
 
-
-
-
     @Override
     public String toString() {
-        return "Clases.EJ3.Evento{" +
+        return "Evento{" +
                 "nombre='" + nombre + '\'' +
                 ", fecha='" + fecha + '\'' +
                 ", prioridad='" + prioridad + '\'' +
