@@ -3,7 +3,10 @@ package Main;
 import Ejercicio1.AnalizadorDeTexto;
 import Ejercicio2.Busqueda;
 import Ejercicio2.Historial;
-import Ejercicio3.Item;
+import Ejercicio3.Evento;
+import Ejercicio3.GestorDeEventos;
+import Ejercicio3.Prioridad;
+import Ejercicio4.Item;
 
 import java.util.*;
 
@@ -15,7 +18,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         //EJ1();
         //EJ2();
-        //EJ3();
+       // EJ3();
         //EJ4(sc);
     }
 
@@ -38,9 +41,21 @@ public class Main {
    }
 
    public static void EJ3 () {
-        TreeSet treeSet = new TreeSet<>();
 
-        Scanner sc = new Scanner(System.in);
+       GestorDeEventos agenda = new GestorDeEventos();
+
+       Evento evento1 = new Evento("papas", Prioridad.ALTA);
+        Evento evento2 = new Evento("Casamiento",Prioridad.MEDIA);
+        Evento evento3 = new Evento("Jugar a la play", Prioridad.ALTA);
+        Evento evento4 = new Evento("Hacer la guia 7",Prioridad.BAJA);
+
+       agenda.AgregarEvento(evento1);
+       agenda.AgregarEvento(evento2);
+       agenda.AgregarEvento(evento3);
+       agenda.AgregarEvento(evento4);
+
+       agenda.MostrarEvento();
+
    }
 
    public static void EJ4 (Scanner sc)
@@ -57,7 +72,6 @@ public class Main {
        Inventario.put(keyname2,item2);
 
        System.out.println(Inventario.toString());
-
 
    }
 }

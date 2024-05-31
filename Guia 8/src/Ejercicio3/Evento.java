@@ -1,12 +1,28 @@
-public class Evento {
-    private String nombre;
-    private String fecha;
-    private String prioridad;
+package Ejercicio3;
 
-    public Evento(String nombre, String fecha, String prioridad) {
+import java.time.LocalDate;
+
+public class Evento implements Comparable <Prioridad> {
+    private String nombre;
+    private LocalDate fecha;
+    private Prioridad prioridad;
+
+    public Evento(String nombre,Prioridad prioridad) {
         this.nombre = nombre;
-        this.fecha = fecha;
+        this.fecha = LocalDate.now();
         this.prioridad = prioridad;
+    }
+
+    public Prioridad getPrioridad() {
+        return prioridad;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     @Override
@@ -16,5 +32,10 @@ public class Evento {
                 ", fecha='" + fecha + '\'' +
                 ", prioridad='" + prioridad + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Prioridad o) {
+        return 0;
     }
 }

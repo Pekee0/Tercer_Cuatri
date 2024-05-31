@@ -1,12 +1,14 @@
-package Ejercicio3;
+package Ejercicio4;
 
 public class Item {
 
+    private String nombre;
     private double precio;
     private int stock;
 
-    public Item (double precio, int stock)
+    public Item (double precio, int stock, String nombre)
     {
+        this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;
     }
