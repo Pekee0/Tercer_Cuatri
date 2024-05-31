@@ -1,12 +1,12 @@
 package app;
 
 import java.util.Scanner;
-import Clases.Cliente;
-import Clases.ClienteBank;
-import Clases.CuentaBank;
-import Clases.Factura;
-import Clases.Autor;
-import Clases.Libro;
+import Ejercicio1.Cliente;
+import Ejercicio1.ClienteBank;
+import Ejercicio1.CuentaBank;
+import Ejercicio1.Factura;
+import Ejercicio1.Autor;
+import Ejercicio1.Libro;
 public class Main {
 
     public static void main (String [] args )

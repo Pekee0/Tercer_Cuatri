@@ -1,6 +1,4 @@
-package Clases;
-
-import Clases.Autor;
+package Ejercicio1;
 
 public class Libro {
 

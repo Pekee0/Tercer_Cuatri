@@ -1,4 +1,4 @@
-package Clases;
+package Ejercicio1;
 
 public class Autor {
 
