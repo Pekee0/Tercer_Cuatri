@@ -6,6 +6,7 @@ import Ejercicio2.Historial;
 import Ejercicio3.Evento;
 import Ejercicio3.GestorDeEventos;
 import Ejercicio3.Prioridad;
+import Ejercicio4.GestorDeInventario;
 import Ejercicio4.Item;
 
 import java.util.*;
@@ -19,7 +20,7 @@ public class Main {
         //EJ1();
         //EJ2();
        // EJ3();
-        //EJ4(sc);
+        EJ4();
     }
 
     public static void EJ1 ()
@@ -58,20 +59,22 @@ public class Main {
 
    }
 
-   public static void EJ4 (Scanner sc)
+   public static void EJ4 ()
    {
-       Item item = new Item(200.0, 3 );
-       String keyname1 = "papitas";
+       GestorDeInventario inventario = new GestorDeInventario();
 
-       Item item2 = new Item(1000,2);
-       String keyname2 = "CoflerBlock";
+       inventario.agregarItem(new Item(2000,3,"Papas fritas"));
+       inventario.agregarItem(new Item(3000,10,"Bubbaloo"));
+       inventario.agregarItem(new Item(3000,2,"Twistos"));
+       inventario.agregarItem(new Item(200,100,"Prime"));
 
-       HashMap <String,Item> Inventario = new HashMap<>();
+       inventario.mostrarItemOrdenados();
+       System.out.println("\n");
 
-       Inventario.put(keyname1,item);
-       Inventario.put(keyname2,item2);
+       inventario.actualizarPrecio(10,"Bubbaloo");
+       inventario.actualizarStock(30,"Bubbaloo");
 
-       System.out.println(Inventario.toString());
+       inventario.mostrarItemOrdenados();
 
    }
 }
