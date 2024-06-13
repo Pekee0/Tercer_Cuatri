@@ -27,4 +27,12 @@ public class PilaGenerica <T extends Number>
         return elementos.remove(elementos.size()-1);
     }
 
+    public void verPila()
+    {
+        for (T elemento : elementos)
+        {
+            System.out.println(elemento);
+        }
+    }
+
 }

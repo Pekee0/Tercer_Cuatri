@@ -1,6 +1,8 @@
 package Main;
 
 import Ejercicio1.ListaGenerica;
+import Ejercicio3.PilaGenerica;
+import Ejercicio9.Contenedor;
 
 import java.util.List;
 
@@ -8,7 +10,11 @@ public class Main {
     public static void main(String[] args)
     {
         //EJ1();
-        EJ2();
+        //EJ2();
+        //EJ3();
+        //EJ4();
+        //EJ5();
+        EJ9();
     }
 
     public static void EJ1()
@@ -53,6 +59,47 @@ public class Main {
 
     public static void EJ3()
     {
+        PilaGenerica pila = new PilaGenerica();
+        pila.Apilar(1);
+        pila.Apilar(2);
+        pila.Apilar(3);
+
+        pila.Desapilar();
+        pila.verPila();
+    }
+
+    public static void EJ4()
+    {
+        //ListaGenerica.mostrarLista();
+    }
+
+    public static void EJ5()
+    {
+       Integer num1 = 5;
+       Integer num2 = 6;
+
+        System.out.println("Comparacion de enteros: " + comparar(num1,num2));
 
     }
+
+    public static <T> boolean comparar (T elemento1, T elemento2)
+    {
+        return elemento1.equals(elemento2);
+    }
+
+    public static <T> void ImprimirLista(List<? super Integer> lista)
+    {
+        for (Object t: lista)
+        {
+            System.out.println(t);
+        }
+    }
+
+    public static void EJ9()
+    {
+        Contenedor contenedor = new Contenedor();
+        contenedor.concatenar(7,"pene");
+
+    }
+
 }

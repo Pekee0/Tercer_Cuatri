@@ -3,7 +3,7 @@ package Ejercicio1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListaGenerica <T> {
+public class ListaGenerica <T>  {
 
     private List<T> elementos = new ArrayList<>();
     private int tope;
@@ -45,6 +45,16 @@ public class ListaGenerica <T> {
 
     public List<T> getElementos() {
         return elementos;
+    }
+
+
+
+    public static < T extends Comparable <T>> void mostrarLista(List<T> lista)
+    {
+        for(T elemento : lista)
+        {
+            System.out.println(elemento);
+        }
     }
 
 
